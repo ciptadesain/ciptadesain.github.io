@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
     <link rel="stylesheet" href="assets/css/vendor/aos.css">
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -48,6 +47,7 @@
                             <li class="nav-item"><a class="nav-link" href="#features">Layanan</a></li>
                             <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
                             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#pricing">Harga</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
                         </ul>
                         <!-- End Mainmanu Nav -->
@@ -57,6 +57,14 @@
                         <a class="rn-btn" target="_blank" href="https://bit.ly/3tKXZMR">
                             <span>Chat Me</span>
                         </a>
+                        <div class="hamberger-menu d-block d-xl-none">
+                            <i id="menuBtn" class="feather-menu humberger-menu"></i>
+                        </div>
+                        <div class="close-menu d-block">
+                            <span class="closeTrigger">
+                                <i data-feather="x"></i>
+                            </span>
+                        </div>
                     </div>
                     <!-- End Header Right  -->
 
@@ -66,6 +74,50 @@
         </div>
     </header>
     <!-- End Header Area -->
+
+    <div class="popup-mobile-menu">
+        <div class="inner">
+            <div class="menu-top">
+                <div class="menu-header">
+                    <a class="logo" href="index.html">
+                        <img src="assets/images/logo/logos-circle.png" alt="Personal Portfolio">
+                    </a>
+                    <div class="close-button">
+                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
+                    </div>
+                </div>
+                <p class="discription">Jasa Desain Profesional</p>
+            </div>
+            <div class="content">
+                <ul class="primary-menu nav nav-pills onepagenav">
+                    <li class="nav-item current"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Lyanan</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#clients">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
+                </ul>
+                <!-- social sharea area -->
+                <div class="social-share-style-1 mt--40">
+                    <span class="title">find with me</span>
+                    <ul class="social-share d-flex liststyle">
+                        <li class="facebook">
+                            <a href="https://bit.ly/3tKXZMR" target="_blank">
+                                <i class="fa-brands fa-whatsapp" style="font-size: 24px; font-weight: 500; color: black;"></i>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/ciptadesain.id/" target="_blank">
+                                <i class="fa-brands fa-instagram" style="font-size: 24px; font-weight: 500; color: black;"></i>
+                            </a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
 
     <!-- Start Main Page Wrapper -->
     <main class="main-page-wrapper">
@@ -80,8 +132,18 @@
                             <div class="content">
                                 <div class="inner">
                                     <span class="subtitle">Welcome to my world</span>
-                                    <h1 class="title"><span>Cipta Desain</span><br><span class="span"> Jasa Desain
-                                            Padang.</span></h1>
+                                    <h1 class="title">Cipta <span>Desain</span><br>
+                                        <span class="header-caption" id="page-top">
+                                            <span class="cd-headline clip is-full-width">
+                                                <span>Jasa </span>
+                                                <span class="cd-words-wrapper">
+                                                    <b class="is-visible">Desain Profesional.</b>
+                                                    <!-- <b class="is-hidden">Professional Coder.</b>
+                                                    <b class="is-hidden">Developer.</b> -->
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </h1>
                                     <div>
                                         <p class="description">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
                                     </div>
@@ -300,8 +362,7 @@
                                                 600</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">The services provide for design <i
-                                                class="feather-arrow-up-right"></i></a></h4>
+                                    <h4 class="title"><a href="javascript:void(0)">The services provide for design <i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -408,8 +469,7 @@
                                                 280</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">Design for tecnology & services<i
-                                                class="feather-arrow-up-right"></i></a></h4>
+                                    <h4 class="title"><a href="javascript:void(0)">Design for tecnology & services<i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -435,8 +495,7 @@
                                                 690</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">App for tecnology & services<i
-                                                class="feather-arrow-up-right"></i></a></h4>
+                                    <h4 class="title"><a href="javascript:void(0)">App for tecnology & services<i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -2640,8 +2699,5 @@
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
 </body>
-
-
-<!-- Mirrored from rainbowit.net/html/inbio/home-designer-white-version.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jun 2022 12:08:36 GMT -->
 
 </html>
